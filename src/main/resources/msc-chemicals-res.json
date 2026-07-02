@@ -1,0 +1,14 @@
+{
+"web":{
+  "type": "service_account",
+  "project_id": "msc-chemicals",
+  "private_key_id": "5afe6ad7e2e9f1a2ca94cd73dfc61a4516825c67",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDINYn+cYmOCrtG\niVIh296xxNMsgddGuKOiZovTWjGt5peyCOxVTd8K2IkebXWgoY3atTgto444oi9i\n31CcNkYHTeKD5QBbw3N80Y/tuIRZ66sZwMA5TkxGBIHEfrubb4bnEqvN7ctq2Pif\nYUBJQB3xCOA1nRd+Q9sEqjC6xruHhoqCcuQIdrNwvU4tusnEX4xwXlJHLiVSfqdp\nEiVUnc4598p7QOktTHQu4zS4QvLEOjQylD/HqGAsPp7dvoTD3c+IFi8UnWF3Z4cj\nAJzSKVhPyF9UAFKAYn1Q6wjktDkDhd3Om1ziVZGaXF8i+emnR+igO71xORtQu7Ub\nt6ZvUKupAgMBAAECggEAAapytUbkpWWI4PQ99lQTS9DGuN30iI0l0maj8Zx0YZ1T\nrt/qDHx8gg/4FcRaIv3OdaQwnUOZPeF5P2C64FkyFw0342T4Q5Xc8VbNNGXcFw3x\n42HXekVAzKEsuGcdYJSVL3ltVnDXh+eZ1k9Q4ZMlSfbq5lNMvt3pwHsPMvykko2h\nTKOYe8QzHPkW0400O8D48/JvKxvnkbWcdBXvnIT/8TI4lwTHXh5yNgXl1TSNfjZi\nxRSbdLCSCvpTuaD/I8khsvhRMUWU0PyLtgybY5/t7i2nHa3qNuzmlmcG6pO/euUY\nXP0PyJQ3yVhYEESjy5HNwfaleRc8SVo5F+Ew5Q29cQKBgQDk7zEC3CUL2We94CUl\nrFgpVW1NvSgGp7QSfCNkSRK6dCKcRAJoCvKbyYc1hddb7fVDB5OAR4+rAcYNwmlh\n9ZPy0S6Ij6j/WEh1balBDuJQMkDZrX3rI5xCCM/ROgohbdy6RDKNwXt4NGrhfjEp\ntBK1QwIvY0uIJaRJPM+rkTa5kQKBgQDf4Pci+9aNeU9v9e9pT+W5BH+z/A1aI5OY\nr8vmpLcqw2OhFcwQoDzbXTq7XkqiCd7XArmbExaLZjG8ztxa6YwLpzqDt4x9jc5J\nHs3K4U+m5z8fxnVO7UxqrGwNTnP/YPdSaNuVxFhuYek9WfbTh870wnYCh2x89sei\n6EySoJ2EmQKBgQDIXCKr2xm9JheqURqRvyUlf7N63vrB4FIz/1tGMMHoVy3XT5o/\njp1IBPeFu06BEWCeumm4UmkFhDbe4fAzIKfMUpEESZ7hY1V/GGuSGcGt6F1jZXiX\nq4HdNTMUbVRib3FHv9nywIwb5txH35aNZiEdbLjj2mZHkJIY2tTx1dRsUQKBgQCX\naCt7S1okv6ALlgXd8RzpbbN348Sb62eMYYfCai8+Cno8nOMvc071BC4OPYy33XkJ\nbFxeFiCvEeQdTsET8tK1ptkZ725iEx8psF15EbuuosG8GZmIUU/W7Nj+fspQMiHR\nZ/zpYqpzrF/zD/6vvC8otMLenvut36/P6s6uc1VUMQKBgQCs/rRUma/i9K0Piri9\nBeuP6qhouAV6Fj0ipZAIUpCbr5KkW6DMXCppX9Ns3JLkjJcTuXVR+PZOvGf+2OxG\ncEciB3wRwJdk6pPn/DhEs+DDyEKznZzYAhG/RX8gTMOgx/DjXPPQCuNU+3EBkW8e\nIjplKLZG1qXgsjafcpb+kotNLA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "mscchemicaladmin@msc-chemicals.iam.gserviceaccount.com",
+  "client_id": "105788128917440493027",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mscchemicaladmin%40msc-chemicals.iam.gserviceaccount.com"
+}
+}

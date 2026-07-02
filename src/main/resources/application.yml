@@ -1,0 +1,63 @@
+spring:
+    main:
+      allow-bean-definition-overriding: true
+    datasource:
+      url: jdbc:mariadb://localhost:3306/mscchemicals?rewriteBatchedStatements=true
+      password: root
+      username: root
+      driver-class-name: org.mariadb.jdbc.Driver
+      hikari:
+        maximum-pool-size: 20 
+        idle-timeout: 100000
+        connection-timeout: 100000
+    jpa:
+      show-sql: false
+      properties:
+        hibernate.jdbc.batch_size: 25
+        hibernate.order_inserts: true
+        hibernate.order_updates: true
+        hibernate.generate_statistics: fase
+    data:
+      rest:
+        base-path: /api
+        detection-strategy: ANNOTATED
+    mail:
+      host: smtp.gmail.com
+      password: \@@Rohan@2802
+      port: 465
+      username: tarun@mscgroup.co.in
+      properties:
+        from: tarun@mscgroup.co.in
+        mail.smtp.ssl.trust: smtp.gmail.com
+        mail.smtp.starttls.enable: false
+        mail.smtp.auth.xoauth2.disable: false
+server:
+  servlet:
+    context-path: /msc-api
+logging:
+  path: /opt/logs/
+  level:
+    root: INFO
+    org.springframework.web.servlet.mvc.method.annotation: DEBUG
+    com:
+      sms: DEBUG
+app:
+  company:
+    environment: dev
+    images: /home/abhinay/mscchemicals-images/
+    mailchimp:
+      username: mscchemicals
+      password: pwd
+    sms:
+      server: http://sms.pencaptech.co.in/api.php
+      username: mscchemicals
+      password: 227898
+    smtp:
+      mailusr: info@mscgroup.co.in
+      from: info@mscgroup.co.in
+    googleplusapikey: AIzaSyAwXF4BWqqfQq8SlPWng2HPjZOBbK7C-Vc
+    googleclientid: 750695684368-gntgdbj138i5p2b3uanq1a5onvu1a64a.apps.googleusercontent.com
+    googlesecret: D32-mmqXg2AmGLe9nD3jtS3_
+    captchasecret: 6LdCtMgUAAAAAF7UeKunn4KbT9IRvO5oD-iHbeUl
+    fcm_server_key: xxxx
+    access_type: offline
