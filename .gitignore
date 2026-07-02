@@ -26,5 +26,5 @@ HELP.md
 /nbdist/
 /.nb-gradle/
 /bin/
-/gradle/
+/.gradle/
 /.attach_pid15699
