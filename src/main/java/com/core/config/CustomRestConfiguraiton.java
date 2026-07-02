@@ -1,12 +1,13 @@
 package com.core.config;
 
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
 
 @Configuration
 class CustomRestMvcConfiguration {
@@ -20,7 +21,7 @@ class CustomRestMvcConfiguration {
 		return new RepositoryRestConfigurer() {
 
 			@Override
-			public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
+			public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config, CorsRegistry cors) {
 				config.setBasePath("/api");
 				config.exposeIdsFor(em.getMetamodel().getEntities().stream().map(entityType -> entityType.getJavaType())
 						.toArray(Class[]::new));

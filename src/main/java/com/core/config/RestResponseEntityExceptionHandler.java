@@ -4,8 +4,8 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Set;
 
-import javax.validation.ConstraintViolation;
-import javax.validation.ConstraintViolationException;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.ConstraintViolationException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -16,6 +16,7 @@ import org.springframework.data.rest.core.RepositoryConstraintViolationException
 import org.springframework.data.rest.webmvc.ResourceNotFoundException;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.transaction.TransactionSystemException;
@@ -39,7 +40,7 @@ public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionH
 
 	@Override
 	protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex,
-			HttpHeaders headers, HttpStatus status, WebRequest request) {
+			HttpHeaders headers, HttpStatusCode status, WebRequest request) {
 
 		// ex.getBindingResult(): extract the bind result for default message.
 		String errorResult = ex.getBindingResult().toString();

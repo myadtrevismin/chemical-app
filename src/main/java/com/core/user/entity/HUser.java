@@ -1,10 +1,10 @@
 package com.core.user.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.EntityListeners;
-import javax.persistence.Id;
-import javax.persistence.NamedQuery;
-import javax.persistence.Table;
+import jakarta.persistence.Entity;
+import jakarta.persistence.EntityListeners;
+import jakarta.persistence.Id;
+import jakarta.persistence.NamedQuery;
+import jakarta.persistence.Table;
 
 import com.core.common.PreventAnyUpdate;
 

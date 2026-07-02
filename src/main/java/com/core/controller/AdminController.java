@@ -1,6 +1,6 @@
 package com.core.controller;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.annotation.Secured;

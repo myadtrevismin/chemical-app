@@ -35,7 +35,8 @@ server:
   servlet:
     context-path: /msc-api
 logging:
-  path: /opt/logs/
+  file:
+    path: /opt/logs/
   level:
     root: INFO
     org.springframework.web.servlet.mvc.method.annotation: DEBUG

@@ -2,7 +2,7 @@ package com.org.followup;
 
 import java.util.Optional;
 
-import javax.persistence.EntityManager;
+import jakarta.persistence.EntityManager;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.rest.core.annotation.HandleAfterCreate;

@@ -3,8 +3,6 @@ package com.core.controller;
 import java.io.IOException;
 import java.text.ParseException;
 
-import javax.xml.bind.DatatypeConverter;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -112,7 +110,7 @@ public class UserController {
 	public Ack getSaveUserImage(@RequestParam("image") String base64Image) {
 		Ack ack = new Ack();
 		
-		ack.setUrl(userDao.updateUserImage(DatatypeConverter.parseBase64Binary(base64Image)));
+		ack.setUrl(userDao.updateUserImage(java.util.Base64.getDecoder().decode(base64Image)));
 
 		return ack;
 	}

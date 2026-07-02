@@ -3,11 +3,11 @@ package com.core.common;
 import java.io.Serializable;
 import java.util.Date;
 
-import javax.persistence.Column;
-import javax.persistence.JoinColumn;
-import javax.persistence.MappedSuperclass;
-import javax.persistence.PrePersist;
-import javax.persistence.PreUpdate;
+import jakarta.persistence.Column;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.MappedSuperclass;
+import jakarta.persistence.PrePersist;
+import jakarta.persistence.PreUpdate;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 

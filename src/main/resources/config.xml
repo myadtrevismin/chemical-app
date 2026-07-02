@@ -7,7 +7,7 @@
 	xmlns:aop="http://www.springframework.org/schema/aop"
 	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd  http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-	<security:global-method-security
+	<security:method-security
 		pre-post-annotations="enabled" secured-annotations="enabled"
 		proxy-target-class="true" />
 	<security:http pattern="/resources/**" security="none"
@@ -70,8 +70,7 @@
 		<security:form-login login-page='/login' />
 		<security:headers>
 			<security:frame-options policy="DENY" />
-			<security:xss-protection block="true"
-				enabled="true" />
+			<security:xss-protection />
 			<!-- <security:header ref=""/> -->
 			<security:content-type-options />
 
@@ -98,12 +97,12 @@
 		class="org.thymeleaf.templateresolver.ClassLoaderTemplateResolver">
 		<beans:property name="prefix" value="/templates/email/" />
 		<beans:property name="suffix" value=".html" />
-		<beans:property name="templateMode" value="LEGACYHTML5" />
+		<beans:property name="templateMode" value="HTML" />
 		<beans:property name="characterEncoding" value="UTF-8" />
 		<beans:property name="order" value="1" />
 	</beans:bean>
 	<beans:bean id="templateEngine"
-		class="org.thymeleaf.spring5.SpringTemplateEngine">
+		class="org.thymeleaf.spring6.SpringTemplateEngine">
 		<beans:property name="templateResolvers">
 			<beans:set>
 				<beans:ref bean="emailTemplateResolver" />
@@ -116,12 +115,12 @@
 		class="org.thymeleaf.templateresolver.ClassLoaderTemplateResolver">
 		<beans:property name="prefix" value="/templates/forms/" />
 		<beans:property name="suffix" value=".html" />
-		<beans:property name="templateMode" value="LEGACYHTML5" />
+		<beans:property name="templateMode" value="HTML" />
 		<beans:property name="characterEncoding" value="UTF-8" />
 		<beans:property name="order" value="1" />
 	</beans:bean>
 	<beans:bean id="formsEngine"
-		class="org.thymeleaf.spring5.SpringTemplateEngine">
+		class="org.thymeleaf.spring6.SpringTemplateEngine">
 		<beans:property name="templateResolvers">
 			<beans:set>
 				<beans:ref bean="formTemplateResolver" />
@@ -133,12 +132,12 @@
 		class="org.thymeleaf.templateresolver.ClassLoaderTemplateResolver">
 		<beans:property name="prefix" value="/templates/pdfs/" />
 		<beans:property name="suffix" value=".html" />
-		<beans:property name="templateMode" value="LEGACYHTML5" />
+		<beans:property name="templateMode" value="HTML" />
 		<beans:property name="characterEncoding" value="UTF-8" />
 		<beans:property name="order" value="1" />
 	</beans:bean>
 	<beans:bean id="pdfsEngine"
-		class="org.thymeleaf.spring5.SpringTemplateEngine">
+		class="org.thymeleaf.spring6.SpringTemplateEngine">
 		<beans:property name="templateResolvers">
 			<beans:set>
 				<beans:ref bean="pdfTemplateResolver" />
