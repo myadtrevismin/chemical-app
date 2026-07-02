@@ -51,7 +51,7 @@ dependencies {
 
     implementation group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml'
 
-    runtimeOnly group: 'org.mariadb.jdbc', name: 'mariadb-java-client'
+    runtimeOnly 'com.mysql:mysql-connector-j'
 
     implementation "com.querydsl:querydsl-jpa:${querydslVersion}:jakarta"
     annotationProcessor "com.querydsl:querydsl-apt:${querydslVersion}:jakarta"
